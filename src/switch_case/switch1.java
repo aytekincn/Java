@@ -1,4 +1,6 @@
-public class Main {
+package switch_case;
+
+public class switch1 {
     public static void main(String[] args) {
         char grade = 'H';
 
@@ -18,5 +20,5 @@ public class Main {
         }
     }
     // en son kullanılanın ardından break kullanmaya gerek yok
-    
+    // aa
 }
