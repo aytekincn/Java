@@ -1,4 +1,4 @@
-package switch_case;
+package java_lessons;
 
 public class LoopDemo {
     public static void main(String[] args) {
