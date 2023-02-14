@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Conditions2 {
     public static void main(String[] args) {
         Scanner s = new Scanner (System.in);
+        // Girilen değere göre alınan harf notunu ekrana yazdırma.
         System.out.print("Lütfen Notunuzu Girin :");
         int not = s.nextInt();
 
