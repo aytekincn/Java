@@ -39,6 +39,7 @@ public class Types3 {
 
 
         System.out.println (u);
+        System.out.println( 3 == 3);
 
 
 
