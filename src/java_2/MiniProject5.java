@@ -7,22 +7,22 @@ public class MiniProject5 {
         // Girilen sayılar arasından en büyüğünü bulma.
         Scanner s = new Scanner (System.in);
 
-        System.out.println(" Birinci Sayıyı Girin :");
+        System.out.print(" Birinci Sayıyı Girin :");
         int a = s.nextInt();
-        System.out.println(" İkinci Sayıyı Girin :");
+        System.out.print(" İkinci Sayıyı Girin :");
         int b = s.nextInt();
-        System.out.println(" Üçüncü Sayıyı Girin :");
+        System.out.print(" Üçüncü Sayıyı Girin :");
         int c = s.nextInt();
 
-        int maks = -1;
+        int min = -1;
 
-        if ( a >= b && a >= c ) {
-            maks = a;
-        }else if ( b >= a && b >=c ) {
-            maks = b;
+        if ( a <= b && a <= c ) {
+            min = a;
+        }else if ( b <= a && b <= c ) {
+            min = b;
         }else {
-            maks = c;
+            min = c;
         }
-        System.out.println(" En Büyük Sayı :" + maks);
+        System.out.println(" En Küçük Sayı :" + min);
     }
 }

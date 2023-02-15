@@ -25,22 +25,21 @@ public class SwitchCase {
          */
 
         Scanner s = new Scanner (System.in);
-        int islem = s.nextInt();
+        String bolge = s.nextLine();
 
-        switch ( islem ) {
-            case 1 :
-                System.out.println(" 1.İşlem ");
-                break;
-            case 2 :
-                System.out.println(" 2.İşlem ");
-                break;
-            case 3 :
-                System.out.println(" 3.İşlem ");
-                break;
-            default :
-                System.out.println(" Geçersiz İşlem ");
-                // son kısımdan sonra break koymaya gerek çünkü sonrasında kontrol edeceği bir yapı yok
 
+        switch ( bolge ) {
+            case "Marmara" :
+                System.out.println(" Öğrencinin Marmara Bölgesi için alacağı burs 600Tl");
+                break;
+
+            case "Ege" :
+                System.out.println(" Öğrencinin Ege Bölgesi için alacağı burs 400Tl");
+                break;
+
+            case "Karadeniz" :
+                System.out.println(" Öğrencinin Karadeniz Bölgesi için alacağı burs 350Tl");
+                break;
 
 
 
