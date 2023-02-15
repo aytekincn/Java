@@ -1,13 +1,13 @@
 package java_2;
 
-import java.util.Scanner;
+
 
 public class Conditions2 {
     public static void main(String[] args) {
-        Scanner s = new Scanner (System.in);
+
         // Girilen değere göre alınan harf notunu ekrana yazdırma.
         System.out.print("Lütfen Notunuzu Girin :");
-        int not = s.nextInt();
+        int not = 60;
 
         if ( not >= 90 ) {
             System.out.println("Notunuz AA'dır");
