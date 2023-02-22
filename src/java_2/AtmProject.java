@@ -16,42 +16,42 @@ public class AtmProject {
         System.out.println("************************************");
 
         while ( true ) {
-            System.out.print("İşlemi Seçiniz :");
+            System.out.print("Yapmak İstediğiniz İşlemin Numarasını Yazın :");
             String islem = s.nextLine();
 
-            if ( islem.equals( "q" ) ) {
-                System.out.println( "Programdan Çıkılıyor....");
+            if ( islem.equals("q") ) {
+                System.out.println("Programdan Çıkılıyor....");
                 break;
 
-            }else if (islem.equals( "1") ) {
-                System.out.println( "Bakiyeniz : " + bakiye );
+            }else if ( islem.equals("1") ) {
+                System.out.println("Bakiyeniz : " + bakiye );
 
-            }else if (islem.equals( "2") ) {
-                System.out.print( "Çekmek İstediğiniz Tutarı Girin :");
+            }else if ( islem.equals("2") ) {
+                System.out.print(" Çekmek İstediğiniz Tutar : ");
                 int tutar = s.nextInt();
-                s.nextLine();
 
-                if ( bakiye - tutar < 0 ) {
-                    System.out.println( "Yetersiz Bakiye.... Bakiyeniz : " + bakiye );
-
-
-                }else {
+             if ( bakiye - tutar < 0) {
+                    System.out.println("Fuckırsınız... Bakiyeniz : " + bakiye );
+            }else {
                     bakiye -= tutar;
-                    System.out.println("Kalan Bakiyeniz : " + bakiye );
+                    System.out.println("Kalan Bakiyeniz " + bakiye );
                 }
 
-            }else if (islem.equals( "3") ) {
-                System.out.print("Yatırmak istediğiniz miktarı girin : ");
-                int tutar = s.nextInt();
-                s.nextLine();
-
-                bakiye += tutar;
-                System.out.println( "Yeni Bakiyeniz :" + bakiye);
+            }else if ( islem.equals("3") ) {
+                System.out.print("Yatırmak İstediğin Miktar : ");
+                int miktar = s.nextInt();
+                bakiye += miktar;
+                System.out.println("Kalan Bakiyeniz :" + bakiye );
 
 
-            }else {
-                System.out.println("Geçersiz İşlem...");
             }
+
+
+
+
+
+
+
 
 
         }
@@ -64,5 +64,11 @@ public class AtmProject {
 
 
 
-    }
-}
+
+
+
+            }
+
+
+        }
+

@@ -10,7 +10,7 @@ public class Break_Continue {
             int islem = s.nextInt();
             if ( islem == -1 ) {
                 System.out.println("İşlem sonlandı..." + islem );
-                break;
+            
 
             }
             System.out.print("İkinci Sayıyı Girin :");
