@@ -31,7 +31,7 @@ public class AtmProject {
                 int tutar = s.nextInt();
 
              if ( bakiye - tutar < 0) {
-                    System.out.println("Fuckırsınız... Bakiyeniz : " + bakiye );
+                    System.out.println("Yetersiz Bakiye... Bakiyeniz : " + bakiye );
             }else {
                     bakiye -= tutar;
                     System.out.println("Kalan Bakiyeniz " + bakiye );
