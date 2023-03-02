@@ -14,6 +14,7 @@ public class Methods3 {
 
         System.out.println ( dortilecarp ( ikiiletopla ( ikiilecarp(6) ) ) );
         // Fonksiyonların içinde method kullanılacaksa void iç içe çalıştırmalarda çalışmaz bundan dolayı method kullanırız.
+        // Method içinde return en son yazılır returnden sonra yazılan kodlar çalışmaz.
 
     }
 }
