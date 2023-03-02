@@ -11,7 +11,7 @@ public class Overloading {
         System.out.println( " isimsiz oyuncun puanı " + puan + " 'dır.");
     }
     public static void main(String[] args) {
-        // Bir fonksiyona birden fazla iş yaptırmak için overloading kullanırı bunu da ekstra diğer durumlar için method oluşturarak yaparız.
+        // Bir fonksiyona birden fazla iş yaptırmak için overloading kullanırız bunu da ekstra diğer durumlar için method oluşturarak yaparız.
 
         skorhesapla( "Aytekin", 1000);
         skorhesapla("Aytekin");
