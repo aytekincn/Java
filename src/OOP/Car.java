@@ -30,7 +30,11 @@ public class Car {
     }
 
     public void setKapilar(int kapilar) {
-        this.kapilar = kapilar;
+        if ( kapilar < 0 ) {
+            System.out.println("Kapı sayısı 0'dan küçük olamaz.");
+        }else {
+            this.kapilar = kapilar;
+        }
     }
 
     public int getTekerlek() {
