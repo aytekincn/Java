@@ -13,7 +13,16 @@ public class Account {
      Birden fazla constructor oluşturabiliriz overloading gibi.
     */
     public Account () {
-        System.out.println("Cons SİUUUUUUUUUU");
+
+    }
+    public void bilgileriGoster () {
+        System.out.println("Hesap No :" + this.hesapNo );
+        System.out.println("Hesap Bakiyesi :" + this.bakiye );
+        System.out.println("Hesabın Sahibi :" + this.isim );
+        System.out.println("Telefon No :" + this.telefonNo );
+        System.out.println("Hesabın Mail Adresi :" + this.email );
+        // Böyle bir method kullanarak bilgilerin hepsini gösterebiliriz
+
 
     } // Constructor oluştururken class ismi ile aynı olması lazım normal method gibi oluşturulur.
     public Account ( String hesapNo, double bakiye, String isim, String email, String telefonNo ) {
@@ -23,6 +32,18 @@ public class Account {
         this.email = email;
         this.telefonNo = telefonNo;
 
+    }
+    public Account ( String isim, String email, String telefonNo) {
+        /*
+        this.isim = isim;
+        this.email = email;
+        this.telefonNo = telefonNo;
+
+        this.bakiye = 0.0;
+        this.hesapNo = "Bilgi Yok";
+        */
+        // Bu şekilde elimizdeki bilgileri kullanıp bilinmeyenlere de geçici değer atayabiliriz.
+        this ("Bilgi Yok",0.0, isim, email, telefonNo );
     }
 
     public void paraYatir ( double miktar ) {
